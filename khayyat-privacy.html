@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - دفتر الخياط (Khayyat Ledger)</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #16808a; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .contact { background: #f4f4f4; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        ul { margin: 10px 0; }
+        li { margin: 8px 0; }
+        [dir="rtl"] { font-family: Tahoma, Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy &mdash; Khayyat Ledger (دفتر الخياط)</h1>
+    <p><b>App:</b> Khayyat Ledger (دفتر الخياط), Android &mdash; published by Desho.Co.Ltd</p>
+    <p><b>Package:</b> <code>com.desho.khayyat</code></p>
+    <p><b>Effective Date:</b> October 2026</p>
+    <p><b>Last Updated:</b> October 30, 2026</p>
+
+    <h2>1. What this app is</h2>
+    <p>Khayyat Ledger is the account book of a tailoring shop: customers and suppliers, invoices,
+    statements of account, credit and instalments, stock, expenses and reports. It is written for
+    Arabic-speaking shops and it works without an internet connection.</p>
+    <p>The short version of this policy is that the shop's book stays on the shop's phone. There is
+    no Khayyat Ledger server, no account to register, and nothing that reads your customers out of
+    the device.</p>
+
+    <h2>2. What is not collected</h2>
+    <ul>
+        <li>No name, email, phone number, address or account is requested to use the app.</li>
+        <li>No analytics, no usage profiling, no remote crash reporting.</li>
+        <li>No advertising SDK is present in this version, so no ad identifier is collected.</li>
+        <li>No contacts, calendar, camera, microphone, call-log or location access is requested.
+        The app declares no permission to read your phone's address book: customers are typed in by
+        the shop.</li>
+        <li>Nothing is sold or rented to anyone.</li>
+    </ul>
+
+    <h3>Why the app still holds an internet permission</h3>
+    <p>The build carries <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> because the app
+    framework and Google Play's billing library are compiled with them, and
+    <code>com.android.vending.BILLING</code> is declared for the subscription that is sold through
+    Google Play. No feature of the ledger itself contacts a server: the app's own code has no URL,
+    no client and no telemetry endpoint, and it completes every task, including printing, with the
+    phone offline.</p>
+
+    <h2>3. What is stored, and where</h2>
+    <ul>
+        <li><b>The ledger:</b> customers, suppliers, orders, measurements, invoices and their lines,
+        payments and instalments, stock items and movements, expenses, income and settings. It is one
+        SQLite database in the app's private storage on this device, readable by no other app.</li>
+        <li><b>The lock:</b> your PIN is kept as a salted PBKDF2 hash (210,000 rounds), never as the
+        digits themselves. Fingerprint unlock uses the Android biometric system and the device's own
+        key storage; a fingerprint image is never seen, taken or stored by this app.</li>
+        <li><b>Backups you ask for:</b> the app writes two files &mdash; a readable JSON export and a
+        copy of the database &mdash; into the folder you choose on this device, and keeps three dated
+        copies. They are yours: the app does not upload them anywhere, and you can delete them at any
+        time.</li>
+        <li><b>Paper you ask for:</b> an invoice is rendered to a PDF on the device. Opening it,
+        printing it or sharing it goes through Android's own print and share sheets, so the copy
+        reaches only the printer or the app you pick in that moment.</li>
+    </ul>
+    <p>Everything above is removed when you uninstall the app. You can clear it sooner:
+    Settings &gt; Apps &gt; دفتر الخياط &gt; Storage &gt; Clear data.</p>
+
+    <h2>4. Subscriptions and payment</h2>
+    <p>The yearly subscription is sold by Google Play with Google Play Billing. The purchase token,
+    the price and the entitlement are handled by Google under its own privacy policy; the app asks
+    Play whether the subscription is active and nothing more. No card number, no payment profile and
+    no Google account detail is collected or stored by this app. You can manage or cancel the
+    subscription in Play Store &gt; Payments &amp; subscriptions.</p>
+    <p><b>In the version now under testing</b> the paywall is not in the build yet, so no purchase is
+    offered and nothing is charged: the billing permission is declared ahead of the release that uses
+    it. When that release ships, this paragraph is where the change is recorded.</p>
+
+    <h2>5. Children</h2>
+    <p>This is a shop's account book for adult use. It is not directed at children and collects no
+    data about them.</p>
+
+    <h2>6. Your data, your control</h2>
+    <p>Because the data never leaves the device, correction and deletion happen in the app itself:
+    every record can be edited, and an invoice can be reversed or deleted within the rules the ledger
+    enforces. Restoring an older backup replaces the current book with that copy. Uninstalling the
+    app deletes the book and the lock.</p>
+
+    <h2>7. If this policy changes</h2>
+    <p>A new version of this page is posted here with a new "Last Updated" date before any release
+    that changes what the app does with data. Nothing in an earlier version is kept in force by
+    silence.</p>
+
+    <div class="contact">
+        <h2>8. Contact</h2>
+        <p><b>Publisher:</b> Desho.Co.Ltd</p>
+        <p><b>Email:</b> <a href="mailto:mostafa.alnajar.2050@gmail.com">mostafa.alnajar.2050@gmail.com</a></p>
+    </div>
+
+    <p dir="rtl" style="margin-top:40px;border-top:1px solid #ccc;padding-top:16px">
+    <b>ملخّص بالعربية:</b> دفتر الخياط طبُّ حساب المحل على هاتفه وحده: لا خادم للشركة، ولا حساب
+    للتسجيل، ولا إرسالٍ لبيانٍ من بيانات العملاء. يُحفظ الدفتر في التخزين الخاص بالتطبيق، ويُحفظ
+    رمزُ القفل بصمةً مشفَّرة لا أرقامًا، ولا ترى البصمةَ التطبيقَ لأن نظامَ الهاتف هو الذي يتولَّاها.
+    النسخُ الاحتياطية ملفَّان يكتبهما المحلُ حيث يشاء على جهازه، وورقةُ الفاتورة تُطبع أو تُشارَك
+    من خلال نظام الطباعة والمشاركة في أندرويد فلا تصل إلا إلى الطابعة أو التطبيق الذي يختاره المحل.
+    الاشتراكُ يبيعه Google Play وتُديره Google وفق سياستها. تُحذف كلُّ البيانات بحذف التطبيق أو
+    بمسح بياناته من إعدادات الهاتف.</p>
+</body>
+</html>
